@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  memevelop-server:
+    image: "memevelop-server:latest"
+    build:
+      context: .
+      dockerfile: resource/docker/server/Dockerfile
+    networks:
+      - memevelop-network
+
+networks:
+  memevelop-network:
+    driver: bridge
+    attachable: true
+
+volumes:
+  memevelop-server-data:

@@ -9,6 +9,11 @@ services:
     networks:
       - memevelop-network
 
+  memevelop-redis:
+    image: "redis:latest"
+    networks:
+      - memevelop-network
+
 networks:
   memevelop-network:
     driver: bridge

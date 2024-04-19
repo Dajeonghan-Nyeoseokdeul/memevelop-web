@@ -1,0 +1,3 @@
+[submodule "resource/proto"]
+	path = resource/proto
+	url = https://github.com/Dajeonghan-Nyeoseokdeul/memevelop-proto.git
